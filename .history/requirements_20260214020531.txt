@@ -1,0 +1,8 @@
+fastapi
+sqlmodel
+uvicorn==0.30.1
+python-jose[cryptography]
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.1
+psycopg2-binary==2.9.11
+email-validator==2.1.1
