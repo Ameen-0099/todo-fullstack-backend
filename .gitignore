@@ -1,6 +1,16 @@
+# Virtual environment
 venv/
+.env
+
+# Python cache files
+__pycache__/
 *.pyc
 *.pyd
-__pycache__/
+
+# Executables / binaries
 *.exe
 *.dll
+
+# VSCode / IDE files (optional)
+.vscode/
+.idea/
