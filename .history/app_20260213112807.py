@@ -12,10 +12,10 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlmodel import Session, select
 from pydantic import BaseModel, EmailStr, Field
 
-from database import get_session
-from models import User, Task
-from security import get_password_hash, verify_password
-from auth import create_access_token, verify_token, oauth2_scheme, ACCESS_TOKEN_EXPIRE_MINUTES
+from .database import get_session
+from .models import User, Task
+from .security import get_password_hash, verify_password
+from .auth import create_access_token, verify_token, oauth2_scheme, ACCESS_TOKEN_EXPIRE_MINUTES
 
 
 app = FastAPI()
