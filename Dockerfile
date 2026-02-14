@@ -7,6 +7,7 @@ ENV PATH="/home/user/.local/bin:$PATH"
 WORKDIR /app
 
 COPY --chown=user ./requirements.txt requirements.txt
+RUN pip install cryptography
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 COPY --chown=user . /app
