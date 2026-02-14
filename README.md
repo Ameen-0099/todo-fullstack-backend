@@ -3,7 +3,7 @@ title: AI-Driven Todo App Backend
 emoji: 🚀
 colorFrom: blue
 colorTo: indigo
-sdk: fastapi
+sdk: docker
 app_port: 8000
 ---
 
