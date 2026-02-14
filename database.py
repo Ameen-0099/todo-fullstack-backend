@@ -3,7 +3,7 @@ import os
 from sqlmodel import create_engine, Session, SQLModel
 
 # Make sure to import models to register them with SQLModel.metadata
-from backend.models import User, Task
+from models import User, Task
 
 # No global engine or create_db_and_tables in this version
 
