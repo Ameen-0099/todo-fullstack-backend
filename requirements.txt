@@ -6,3 +6,4 @@ passlib[bcrypt]
 python-dotenv
 psycopg2-binary
 email-validator
+python-multipart
