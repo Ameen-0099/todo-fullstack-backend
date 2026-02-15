@@ -2,7 +2,7 @@ from typing import List, Optional
 from datetime import datetime, timedelta, timezone
 from uuid import uuid4
 from enum import Enum
-from dotenv import load_dotenv
+
 
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -19,7 +19,7 @@ def create_app() -> FastAPI:
     """
     Creates and configures the FastAPI application.
     """
-    load_dotenv()
+
 
     app = FastAPI(
         title="AI-Driven Todo App",
@@ -192,4 +192,11 @@ def create_app() -> FastAPI:
 
     return app
 
+# Create the FastAPI app instance
 app = create_app()
+
+# For Vercel deployment, make sure the app object is accessible
+# This ensures that Vercel can properly import and serve the application
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
